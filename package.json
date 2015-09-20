@@ -1,0 +1,19 @@
+{
+  "name": "Lister",
+  "version": "0.0.1",
+  "description": "Lister is a image checker for given text file.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gokhan Karadas <gokhan.karadas1992@gmail.com> (http://www.gokhankaradas.com)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.2",
+    "request": "^2.61.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/previousdeveloper/Lister.git"
+  }
+}
