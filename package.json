@@ -1,8 +1,8 @@
 {
-  "name": "Lister",
+  "name": "lister-checker",
   "version": "0.0.1",
   "description": "Lister is a image checker for given text file.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/previousdeveloper/Lister.git"
-  }
+    "url": "https://github.com/previousdeveloper/lister-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/previousdeveloper/lister-checker/issues"
+  },
+  "homepage": "https://github.com/previousdeveloper/lister-checker#readme",
+  "devDependencies": {}
 }

@@ -11,6 +11,9 @@ Lister.check = function (path, cb) {
 
     fs.readFile(path, function (err, f) {
 
+        if (f === undefined) {
+            throw new Error("file path not found");
+        }
         var array = f.toString().split('\n');
 
         array.forEach(function (data) {

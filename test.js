@@ -1,10 +1,10 @@
 /**
  * Created by previousdeveloper on 20.09.2015.
  */
-var test = require("./lib/index");
+var test = require("./index");
 
 
-test.check('/Volumes/Untitled/Github/Lister/file.txt', function (data) {
+test.check("./file.txt", function (data) {
 
     console.log(data);
 });
