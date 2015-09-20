@@ -4,34 +4,38 @@
 var fs = require("fs");
 var request = require('request');
 
-var Lister = {};
+(function () {
 
 
-Lister.check = function (path, cb) {
+    var Lister = {};
 
-    fs.readFile(path, function (err, f) {
 
-        if (f === undefined) {
-            throw new Error("file path not found");
-        }
-        var array = f.toString().split('\n');
+    Lister.check = function (path, cb) {
 
-        array.forEach(function (data) {
-            request(data, function (error, response, body) {
-                if (!error && response.statusCode == 200) {
+        fs.readFile(path, function (err, f) {
 
-                    cb(data);
+            if (f === undefined) {
+                throw new Error("file path not found");
+            }
+            var array = f.toString().split('\n');
 
-                } else {
+            array.forEach(function (data) {
+                request(data, function (error, response, body) {
+                    if (!error && response.statusCode == 200) {
 
-                }
-            })
+                        cb(data);
 
+                    } else {
+
+                    }
+                })
+
+            });
         });
-    });
 
 
-};
+    };
 
-module.exports = Lister;
+    module.exports = Lister;
 
+})();
